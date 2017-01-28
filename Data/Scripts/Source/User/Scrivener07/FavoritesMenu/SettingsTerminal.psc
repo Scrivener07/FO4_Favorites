@@ -1,0 +1,1 @@
+Scriptname Scrivener07:FavoritesMenu:SettingsTerminal extends Terminal Const
