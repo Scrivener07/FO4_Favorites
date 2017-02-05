@@ -1,26 +1,28 @@
-Scriptname Scrivener07:FavoritesMenu:MainAliasPlayer Extends ReferenceAlias Conditional
+Scriptname Favorites:MainAliasPlayer Extends ReferenceAlias Conditional ; Conditional?
+{Context}
 
-; http://hastebin.com/raw/olezeqimag
+; http://pastebin.com/raw/olezeqimag
 ; search: fQuestCinematicObjectivePauseTime
 
-; Fields
-;---------------------------------------------------------------------------------------------------
 string ModName = "Slow Favorites Menu" Const
 string FavoritesMenu = "FavoritesMenu" Const
 
-; Methods
-;---------------------------------------------------------------------------------------------------
+
+; Events
+;---------------------------------------------
 
 Event OnInit()
 	OnPlayerLoadGame()
 	RegisterForMenuOpenCloseEvent(FavoritesMenu)
 EndEvent
 
+
 Event OnPlayerLoadGame()
 	If(PlayerRef.HasSpell(SFM_FavoritesSpell) == false)
 		PlayerRef.AddSpell(SFM_FavoritesSpell, abVerbose = false)
 	EndIf
 EndEvent
+
 
 Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)
 	If(asMenuName == FavoritesMenu)
@@ -32,10 +34,11 @@ Event OnMenuOpenCloseEvent(string asMenuName, bool abOpening)
 	EndIf
 EndEvent
 
+
 ; Properties
-;---------------------------------------------------------------------------------------------------
-Group AutoFill
+;---------------------------------------------
+
+Group Properties
 	Actor Property PlayerRef Auto Const Mandatory
-;	Holotape Property SFM_Holotape Auto Const Mandatory
 	Spell Property SFM_FavoritesSpell Auto Const Mandatory
 EndGroup

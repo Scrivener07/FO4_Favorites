@@ -1,0 +1,1 @@
+Scriptname Favorites:SettingsTerminal extends Terminal Const

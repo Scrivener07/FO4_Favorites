@@ -1,6 +1,10 @@
-Scriptname Scrivener07:FavoritesMenu:PauseEffect Extends ActiveMagicEffect
+Scriptname Favorites:PauseEffect Extends ActiveMagicEffect
 
 InputEnableLayer InputLayer
+
+
+; Events
+;---------------------------------------------
 
 Event OnInit()
 	InputLayer = InputEnableLayer.Create()
@@ -19,6 +23,10 @@ Event OnEffectFinish(Actor akTarget, Actor akCaster)
 	InputLayer.Reset()
 EndEvent
 
-Group AutoFill
+
+; Properties
+;---------------------------------------------
+
+Group Properties
 	Spell Property SFM_SlowTime Auto Const Mandatory
 EndGroup
