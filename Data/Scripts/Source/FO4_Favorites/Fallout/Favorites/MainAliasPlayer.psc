@@ -1,4 +1,4 @@
-Scriptname Favorites:MainAliasPlayer Extends ReferenceAlias Conditional ; Conditional?
+Scriptname Fallout:Favorites:MainAliasPlayer Extends ReferenceAlias Conditional ; Conditional?
 {Context}
 
 ; http://pastebin.com/raw/olezeqimag

@@ -1,4 +1,4 @@
-Scriptname Favorites:PauseEffect Extends ActiveMagicEffect
+Scriptname Fallout:Favorites:PauseEffect Extends ActiveMagicEffect
 
 InputEnableLayer InputLayer
 

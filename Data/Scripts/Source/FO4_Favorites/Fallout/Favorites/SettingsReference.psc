@@ -1,4 +1,4 @@
-Scriptname Favorites:SettingsReference Extends ObjectReference Const
+Scriptname Fallout:Favorites:SettingsReference Extends ObjectReference Const
 
 
 ; Events

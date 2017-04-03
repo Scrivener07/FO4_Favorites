@@ -1,1 +1,1 @@
-Scriptname Favorites:SettingsTerminal extends Terminal Const
+Scriptname Fallout:Favorites:SettingsTerminal extends Terminal Const
